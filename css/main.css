@@ -1,3 +1,35 @@
 body{
   font-family: "Roboto", sans-serif;
+  font-weight: bolder;
 }
+hr{
+  background-color: #f15025;
+}
+.nav-logo{
+  background-color: #f15025;
+}
+no-padding{
+  padding: 0;
+}
+/** SIDEBAR **/
+.sidebar{
+  border-right: .125rem solid #ced0ce;
+  background-color: #fff;
+}
+.sidebar .list-group-item{
+  border: none;
+}
+.sidebar .nav-color{
+  color: #ced0ce;
+}
+.sidebar .nav-btn{
+  border-radius: 1.875rem;
+  font-size: 1.25rem;
+  background-color: #f15025;
+  color: #353531;
+}
+.sidebar .nav-btn:hover{
+  background-color: #353531;
+  color: #f15025;
+}
+/** END OF SIDEBAR **/
