@@ -40,6 +40,6 @@ $(document).ready(function () {
 
 
 	//change color of nav
-	$('.owl-prev').html('<i class="fa fa-chevron-left"></i>');
-	$('.owl-next').html('<i class="fa fa-chevron-right"></i>');
+	$('.owl-prev').html('<i class="fas fa-chevron-left"></i>');
+	$('.owl-next').html('<i class="fas fa-chevron-right"></i>');
 });
