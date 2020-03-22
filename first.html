@@ -3,23 +3,364 @@
   <head>
     <title>Music App</title>
     <!-- RREQUIRED META TAGS -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- FAVICON -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- OWL CAROUSEL -->
-    <link rel="stylesheet" href="owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-    <!-- FONTAWESOME -->
-    <script src="js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-lg-2 order-2 order-md-1 col-10 mx-auto d-flex flex-column no-padding sidebar">
+          <!-- MUSIC COLUMN -->
+          <div class="music mt-0">
+            <ul class="list-group list-group-flush">
+              <div class="list-group-item py-2 nav-logo">
+                <img src="images/logo.png" alt="Logo" class="img-fluid my-3 " width="300">
+              </div> <!-- .list-group-item .py-2 .nav-logo -->
+              <div class="list-group-item text-uppercase mt-3 nav-color">music</div>
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-music mr-3 nav-color"></i>
+                Featured
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-microphone mr-3 nav-color"></i>
+                Radio
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-list mr-3 nav-color"></i>
+                Song list
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-tv mr-3 nav-color"></i>
+                TV
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-heart mr-3 nav-color"></i>
+                Liked
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-download mr-3 nav-color"></i>
+                Download
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-play mr-3 nav-color"></i>
+                Play history
+              </a> <!-- .list-group-item .list-group-item-action -->
+              <!-- END OF SINGLE LINK -->
+            </ul> <!-- .list-group .list-group-flush -->
+          </div> <!-- .music .mt-0 -->
+          <!-- END OF MUSIC COLUMN -->
+          <!-- MY MUSIC COLUMN -->
+          <!-- MY MUSIC LIST -->
+          <div class="my-music-list">
+            <ul class="list-group list-group-flush">
+              <div class="list-group-item text-uppercase mt-3 nav-color">
+                my music list
+              </div> <!-- .list-group-item .text-uppercase .mt-3 .nav-color -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action text-uppercase">
+                pop
+              </a> <!-- .list-group-item .list-group-item-action .text-uppercase -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action text-uppercase">
+                rock
+              </a> <!-- .list-group-item .list-group-item-action .text-uppercase -->
+              <!-- END OF SINGLE LINK -->
+              <!-- SINGLE LINK -->
+              <a href="#" class="list-group-item list-group-item-action text-uppercase">
+                heavy metal
+              </a> <!-- .list-group-item .list-group-item-action .text-uppercase -->
+              <!-- END OF SINGLE LINK -->
+            </ul> <!-- .list-group .list-group-flush -->
+            <a href="" class="btn w-50 mx-3 mt-4 d-block nav-btn">
+              Explore
+            </a> <!-- .btn.w-50 .mx-3 .mt-4 .d-block .nav-btn -->
+          </div> <!-- .my-music-list -->
+          <!-- END OF MY MUSIC LIST -->
+          <!-- END OF MY MUSIC COLUMN -->
+        </div> <!-- .col-md-3 .col-lg-2 .order-2 .order-md-1 .col-10 .mx-auto .d-flex .flex-column .no-padding .sidebar -->
+        <!-- MAIN TOP SECTION CONTENT -->
+        <div class="col-md-9 col-lg-10 order-1 order-md-2 p-5 bg-light content">
+          <!-- MAIN ROW -->
+          <div class="row">
+            <div class="col d-flex flex-wrap justify-content-between pb-5">
+              <!-- NAV SEARCH -->
+              <div class="nav-search d-flex flex-wrap">
+                <div class="nav-icons mr-5 align-self-center">
+                  <a href="index.html"><i class="fas fa-chevron-left mr-3 icon"></i></a>
+                  <a href="second.html"><i class="fas fa-chevron-right mr-3 icon"></i></a>
+                </div> <!-- .nav-icons .mr-5 .align-self-center -->
+                <!-- FORM -->
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Search for Music">
+                    <div class="input-group-append">
+                      <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div> <!-- .input-group-append -->
+                  </div> <!-- .input-group -->
+                </form>
+                <!-- END OF FORM -->
+              </div> <!-- .nav-search .d-flex .flex-wrap -->
+              <!-- END OF NAV SEARCH -->
+              <!-- AVATAR -->
+              <div class="avtar-icon d-flex flex-wrap">
+                <h6 class="mr-3 align-self-center">John Doe</h6>
+                <a href="#">
+                  <img src="images/team-2.jpg" alt="John Doe" class="img-fluid rounded-circle" width="50">
+                </a>
+              </div> <!-- .avtar-icon .d-flex .flex-wrap -->
+              <!-- END OF AVATAR -->
+            </div> <!-- .col .d-flex .flex-wrap .justify-content-between .pb-5 -->
+          </div> <!-- .row -->
+          <!-- END OF MAIN ROW -->
+          <hr>
+          <!-- PICTURES NAVIGATION ROW -->
+          <div class="row">
+            <div class="col pt-4 pb-2">
+              <h4>Top Songs</h4>
+            </div> <!-- col .pt-4 .pb-2 -->
+          </div> <!-- .row -->
+          <!-- END OF PICTURES NAVIGATION ROW -->
+          <!-- PICTURES ROW -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <div id="top-songs" class="owl-carousel owl-theme">
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-1.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-2.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-3.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-4.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-5.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-1.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-2.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+              </div> <!-- #top-songs .owl-carousel .owl-theme -->
+            </div> <!-- .col-12 -->
+          </div> <!-- .row .mb-5 -->
+          <!-- END OF PICTURES ROW -->
+          <hr>
+          <!-- TABLE AND SIDE PICTURES -->
+          <div class="row align-items-center">
+            <!-- TABLE SECTION -->
+            <div class="col-lg-6 my-5 no-padding">
+              <!-- TITLE -->
+              <div class="d-flex justify-content-between mb-3">
+                <h4 class="align-self-center">Top Picks</h4>
+              </div> <!-- .d-flex .justify-content-between .mb-3 -->
+              <!-- END OF TITLE -->
+              <!-- TABLE -->
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col" class="text-muted">Song</th>
+                    <th scope="col" class="text-muted">Album</th>
+                    <th scope="col" class="text-muted">Band</th>
+                    <th scope="col" class="text-muted">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <img src="images/music-1.jpeg" alt="music" class="img-fluid rounded">
+                    </th>
+                    <td>Something From Nothing</td>
+                    <td>Sonic Highways</td>
+                    <td>Foo Fighters</td>
+                    <td>4:35</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <img src="images/music-2.jpeg" alt="music" class="img-fluid rounded">
+                    </th>
+                    <td>The Monster</td>
+                    <td>Marshall Mathers</td>
+                    <td>Eminem</td>
+                    <td>4:35</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <img src="images/music-3.jpeg" alt="music" class="img-fluid rounded">
+                    </th>
+                    <td>I am highway</td>
+                    <td>Audio Slave</td>
+                    <td>Audio Slave</td>
+                    <td>4:35</td>
+                  </tr>
+                </tbody>
+              </table> <!-- .table .table-hover -->
+              <!-- END OF TABLE -->
+            </div> <!-- .col-sm-6 .my-5 .no-padding -->
+            <!-- END OF TABLE SECTION -->
+            <div class="col-lg-6 my-5">
+              <h4>Top Albums</h4>
+              <div id="top-albums" class="owl-carousel owl-theme">
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-1.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-2.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-3.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-4.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-5.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-1.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+                <!-- SINGLE ITEM -->
+                <div class="item text-center">
+                  <h6 class="mb-0">Artist</h6>
+                  <p class="text-muted mb-0">Song</p>
+                  <div class="img-container">
+                    <img src="images/music-2.jpeg" alt="music" class="img-fluid">
+                    <a href="#"><i class="fas fa-music"></i></a>
+                  </div> <!-- .img-container -->
+                </div> <!-- .item .text-center -->
+                <!-- END OF SINGLE ITEM -->
+              </div> <!-- #top-songs .owl-carousel .owl-theme -->
+            </div> <!-- .col-sm-6 .my-5 -->
+          </div> <!-- .row .align-items-center -->
+          <!-- END OF TABLE AND SIDE PICTURES -->
+        </div> <!-- .col-md-9 .col-lg-10 .order-1 .order-md-2 .p-5 .bg-light .content -->
+        <!-- END OF MAIN TOP SECTION CONTENT -->
+      </div> <!-- .row -->
+    </div> <!-- .container-fluid -->
+
     <!-- SCRIPTS -->
     <!-- JQUERY -->
     <script src="js/jquery-3.4.1.min.js"></script>
